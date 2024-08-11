@@ -13,7 +13,7 @@ function PerformanceReport({ report }) {
     doc.setFontSize(18);
     doc.text('Performance Report', 14, 22);
 
-    // Prepare report data for the table, excluding the _id field
+  
     const reportData = [
       ['URL', report.url],
       ['Performance Score', report.performanceScore],
@@ -34,7 +34,7 @@ function PerformanceReport({ report }) {
       head: [['Metric', 'Value']],
       body: reportData,
       startY: 30,
-      theme: 'striped', // You can also use 'grid', 'plain', or customize it
+      theme: 'striped', // we can also use 'grid', 'plain', or customize it
       styles: {
         fontSize: 12,
         cellPadding: 5,
